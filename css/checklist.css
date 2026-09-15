@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #313338;
+    color: #dbdee1;
+}
+
+/* Whole application */
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Server column */
+
+.servers {
+    width: 72px;
+    background: #1e1f22;
+    padding: 12px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.server {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background: #313338;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.server:hover,
+.server.active {
+    border-radius: 16px;
+    background: #5865f2;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 240px;
+    background: #2b2d31;
+}
+
+.sidebar-header {
+    height: 60px;
+    padding: 20px;
+
+    border-bottom: 1px solid #1e1f22;
+}
+
+.sidebar-header h2 {
+    color: white;
+    font-size: 16px;
+}
+
+.category {
+    padding: 20px 10px;
+}
+
+.category p {
+    color: #949ba4;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+/* Checklist categories */
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 9px 10px;
+    margin-bottom: 3px;
+
+    border-radius: 5px;
+
+    color: #b5bac1;
+    text-decoration: none;
+
+    transition: 0.15s;
+}
+
+.checklist-item:hover {
+    background: #35373c;
+    color: white;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+}
+
+
+/* Status colours */
+
+.red {
+    background: #ed4245;
+}
+
+.yellow {
+    background: #faa61a;
+}
+
+.green {
+    background: #23a559;
+}
+
+.grey {
+    background: #949ba4;
+}
+
+.blue {
+    background: #3498db;
+}
+
+.purple {
+    background: #9b59b6;
+}
+
+
+/* Main content */
+
+.main {
+    flex: 1;
+    background: #313338;
+}
+
+.top-bar {
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 20px;
+
+    border-bottom: 1px solid #1e1f22;
+}
+
+.top-bar span {
+    color: #949ba4;
+    font-size: 24px;
+}
+
+.top-bar h1 {
+    color: white;
+    font-size: 16px;
+}
+
+.content {
+    padding: 30px;
+}
+
+.content h2 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #949ba4;
+}
+
+
+/* Checklist cards */
+
+.checklist-card {
+    margin-top: 25px;
+
+    padding: 16px;
+
+    background: #2b2d31;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checklist-card h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.checklist-card p {
+    color: #949ba4;
+}
+
+
+/* Item status */
+
+.item-status {
+    padding: 6px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.in-progress {
+    background: #9b59b6;
+    color: white;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/checklist.css">
+
+    <title>Checklist</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Server Icons -->
+        <aside class="servers">
+            <div class="server active">A</div>
+            <div class="server">+</div>
+        </aside>
+
+
+        <!-- Checklist Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+                <h2>Abnormality</h2>
+            </div>
+
+            <div class="category">
+                <p>CHECKLIST</p>
+
+                <a href="#not-completed" class="checklist-item">
+                    <span class="status red"></span>
+                    Not Completed
+                </a>
+
+                <a href="#partially-completed" class="checklist-item">
+                    <span class="status yellow"></span>
+                    Partially Completed
+                </a>
+
+                <a href="#completed" class="checklist-item">
+                    <span class="status green"></span>
+                    Completed
+                </a>
+
+                <a href="#others" class="checklist-item">
+                    <span class="status grey"></span>
+                    Others
+                </a>
+
+                <a href="#connected" class="checklist-item">
+                    <span class="status blue"></span>
+                    Connected
+                </a>
+
+                <a href="#in-progress" class="checklist-item">
+                    <span class="status purple"></span>
+                    In Progress
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <header class="top-bar">
+                <span>#</span>
+                <h1>Checklist</h1>
+            </header>
+
+            <section class="content">
+
+                <h2>Checklist</h2>
+
+                <p class="description">
+                    Select a category from the sidebar to view your items.
+                </p>
+
+                <!-- Example checklist item -->
+
+                <div class="checklist-card">
+                    <div>
+                        <h3>Example Item</h3>
+                        <p>This is an example checklist item.</p>
+                    </div>
+
+                    <span class="item-status in-progress">
+                        In Progress
+                    </span>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

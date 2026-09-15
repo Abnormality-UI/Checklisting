@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/general.css">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="../Checklisting/css/general.css">
+
+    <title>Abnormality Checklist</title>
 </head>
+
 <body>
-    <h1>My Checklisting App</h1>
+
+    <div class="app">
+
+        <!-- Server / Navigation Sidebar -->
+        <aside class="sidebar">
+
+            <div class="server-header">
+                <h2>Abnormality</h2>
+            </div>
+
+            <div class="nav-section">
+                <p>CHECKLIST</p>
+
+                <a href="index.html" class="nav-button active">
+                    🏠 Home
+                </a>
+
+                <a href="calendar.html" class="nav-button">
+                    📅 Calendar
+                </a>
+
+                <a href="checklist.html" class="nav-button">
+                    ✅ Checklist
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <header class="top-bar">
+                <h1>Abnormality Checklist</h1>
+            </header>
+
+            <section class="content">
+
+                <h2>Welcome!</h2>
+
+                <p>
+                    Keep track of abnormalities, tasks and important dates.
+                </p>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>📋 Checklist</h3>
+                        <p>View and manage your checklist.</p>
+                        <a href="checklist.html">Open Checklist →</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>📅 Calendar</h3>
+                        <p>View upcoming dates and events.</p>
+                        <a href="calendar.html">Open Calendar →</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- User panel -->
+            <div class="user-panel">
+                <div class="avatar">U</div>
+
+                <div class="user-info">
+                    <strong>User</strong>
+                    <span>Online</span>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
 </body>
 </html>
